@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!--Metadatos-->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="author" content="Fabian Perez Sanchez">
+      <meta name="description" content="Portafolio de desarrollo Web de Fabian Perez Sanchez">
+      <meta name="keywords" content="HTML, CSS, JavaScript, React">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Titulo-->
+      <title>Fabian Perez | Desarrollo Web</title>
+      <!--Favicon-->
+      <link rel="icon" type="imege/x-icon" href="/img/Favicon.png">
+      <!--CSS Only-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/ecc5c95102.js" crossorigin="anonymous"></script>
+      <!--CSS-->
+      <link rel="stylesheet" type="text/CSS" href="/style.css">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Righteous&display=swap" rel="stylesheet">
+      <base href="/">
+  </head>
+  <body>
+    <header>
+        <!--Barra de navegacion-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark"> <!-- Fixed-top, deja la navbar fija-->
+          <div class="container-fluid">
+            <!--Logo AP-->
+            <a class="navbar-brand" href="#">
+                <img class="logo" src= "/img/LogoAP.png" alt="Logo AP">
+            </a>
+            <!-- Boton del menú->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-Elementos del menu colapsable->
+            <div class="collapse navbar-collapse" id="menu">
+              <hr class="text-white-50">
+              <ul class="texto-menu navbar-nav m-none justify-content-center align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#sobre-mi">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experiencia">Experiencia laboral</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#educacion">Educación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hard-soft">hard & Soft Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>-->
+            <!-- Redes Sociales -->
+            <ul class="iconos-redes-sociales navbar-nav flex-row flex-wrap align-items-center text-light ms-auto">
+              <li class="nav-item col-4 col-md-none p-2">
+                <a href="https://www.linkedin.com/in/ffperezs/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-none p-2">
+                <a href="https://github.com/ffperezs" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-none p-2">
+                <a href="https://www.instagram.com/fabi.perezs/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Button login -->
+          <a class="navbar-nav text-light d-md-block p-3 ms-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-user-lock fa-xl"></i>
+          </a>
+          <!-- Modal login -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id="staticEmail" value="email@dominio.com">
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Iniciar sesión</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+      </nav>
+    </header>
+    <!--encabezado-->
+    <div class="container">
+      <div class="row gx-5">
+        <div class="banner col-lg-12">
+          <img src="/img/Banner.jpg" alt="Banner" class="img-fluid">
+          <button type="submit" class="btn btn-banner">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gx-5">
+        <div class="about-me col-lg-12">
+          <div class="row gx-5">
+            <div class="col-lg-5 justify-content-center position-relative">
+              <img src="/img/Perfil.png" alt="Foto Perfil" class="img-fluid position-absolute translate-middle change-pic">
+              <button type="submit" class="btn btn-perfil">
+                <i class="fa-solid fa-camera"></i>
+              </button>
+              <h1 id="dev-name">Fabian Perez</h1>
+              <h2 id="dev-title">Full Stack Developer Jr.</h2>
+              <a class="app-contacto" href="https://wa.me/1140390090" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2xl p-4"></i>
+              </a>
+              <a class="app-contacto" href="mailto:perezsanchezff@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope fa-2xl p-4"></i>
+              </a>
+              <button type="submit" class="btn btn-datos">
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+            </div>
+            <div class="col-lg-7 d-flex align-items-center">
+              <div class="container about-me-description">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3>SOBRE MI</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p>Soy una persona con excelentes relaciones interpersonales y habilidad para desempeñar cargos de alta responsabilidad y cumplimiento. Tengo facilidad para el aprendizaje de nuevos conceptos y herramientas de trabajo, por lo cual puedo desenvolver las funciones que me sean asignadas sin ninguna dificultad. Me considero una persona responsable, disciplinado, con iniciativa y puntualidad. Tengo el conocimiento y dominio de Programas como Word y Excel, elaboración de base de datos, teniendo en cuenta la utilización de las TICS.</p>
+                    <button type="submit" class="btn btn-sobre-mi">
+                      <i class="fa-solid fa-pencil"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Experincia laboral -->
+    <section id="experiencia" class="experiencia seccion-oscura">
+      <h1>Experiencia Laboral</h1>
+      <div class="container text-center">
+        <div class="row">
+          <!-- Experiencia 1 -->
+          <div class="columna col-12 col-md-4">
+            <a class="experiencia-web" href="#" target="_blank">
+              <img class="logo" src="/img/LogoCompany.png">
+            </a>
+            <h3>EMPRESA X</h3>
+            <p class="experiencia-puesto">Freelance</p>
+            <p><time>Junio 2022</time> - <time>Actualmente</time></p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+              <span class="badge text-bg-primary">Angular</span>
+              <span class="badge text-bg-primary">Base de Datos</span>
+            </div>
+          </div>
+            <!-- Experiencia 2 -->
+            <div class="columna col-12 col-md-4">
+              <a class="experiencia-web" href="#" target="_blank">
+                <img class="logo" src="/img/LogoMovistar.png">
+              </a>
+              <h3>MOVISTAR<h3>
+              <p class="experiencia-puesto">Lider</p>
+              <p><time>Abril 2017</time> - <time>Actualmente</time></p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">Lider</span>
+                <span class="badge text-bg-primary">Atención al Cliente</span>
+                <span class="badge text-bg-primary">Tareas Administrativas</span>
+                <span class="badge text-bg-primary">Ventas</span>
+              </div>
+            </div>
+            <!-- Experiencia 3 -->
+            <div class="columna col-12 col-md-4">
+              <a class="experiencia-web" href="#" target="_blank">
+                <img class="logo" src="/img/LogoAvVillas.png">
+              </a>
+              <h3>BANCO AV VILLAS</h3>
+              <p class="experiencia-puesto">Ejecutivo de Ventas</p>
+              <p><time>Febrero 2015</time> - <time>Abril 2016</time></p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">Ventas</span>
+                <span class="badge text-bg-primary">Atención al Cliente</span>
+                <span class="badge text-bg-primary">Cumplimiento de Objetivos</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-close-white btn-experiencia">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+        <button type="submit" class="btn btn-close-white btn-experiencia">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </section>  
+    <!-- Educación -->
+    <section id="educacion" class="educacion seccion-clara">
+      <h1>Educación</h1>
+      <div class="container text-center">
+        <div class="row">
+          <!-- educacion 1-->
+          <div class="columna col-12 col-md-4">
+            <a href="https://www.argentina.gob.ar/inti" target="_blank">
+            <img class="logo" src="https://www.inti.gob.ar/assets/imagenes/inti-logo.png">
+            </a>
+            <p class="educacion-Instituto">INTI</p>
+            <p class="educacion-Titulo">Full Stack Developer Jr.</p>
+            <p><time>Febrero 2022</time> - <time>Actualmente</time></p>
+          </div>
+          <!-- educacion 2-->
+          <div class="columna col-12 col-md-4">
+            <a href="https://www.aluracursos.com/" target="_blank">
+            <img class="logo" src="https://cdn2.gnarususercontent.com.br/6/449886/e4621638-6168-4948-a623-76dcfdefd99c.png">
+            </a>
+            <p class="educacion-Instituto">Alura LATAM + ONE</p>
+            <p class="educacion-Titulo">Desarrollador Frontend</p>
+            <p><time>Enero 2022</time> - <time>Junio 2023</time></p>
+          </div>
+          <!-- educacion 3-->
+          <div class="columna col-12 col-md-4">
+            <a href="https://unlp.edu.ar/" target="_blank">
+            <img class="logo" src="https://unlp.edu.ar/wp-content/uploads/2012/09/UNLP-e1667509972531.png">
+            </a>
+            <p class="educacion-Instituto">UNLP</p>
+            <p class="educacion-Titulo">Ingeniero de Sistemas</p>
+            <p><time>Enero 2021</time> - <time>Actualmente</time></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-close-white btn-educacion">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+        <button type="submit" class="btn btn-close-white btn-educacion">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Hard & Soft Skills -->
+    <section class="skills seccion-oscura" id="skills">
+      <h1>Skills</h1>
+      <div class="contenido-seccion">
+        <div class="fila-10">
+          <!-- Technical Skills -->
+          <div class="columna col-12">
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Angular</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>83%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Git & GitHub</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>88%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Professional Skills -->
+          <div class="skill">
+            <span>Comunicación</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Trabajo en Equipo</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>88%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Creatividad</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Compromiso</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>97%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Escucha Activa</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>88%</span>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-close-white btn-hard-soft">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+        <button type="submit" class="btn btn-close-white btn-hard-soft">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </section>  
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos seccion-clara d-flex flex-colum">
+      <h1>PROYECTOS</h1>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="/img/Proyecto1.jpg" alt="proyecto 2">
+              <div class="overlay">
+                <p>Encriptador de Texto</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/ffperezs" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a [href]="proyectos.linkproyect" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-folder-open"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="/img/Proyecto2.jpg" alt="proyecto 2">
+              <div class="overlay">
+                <p>Portafolio</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/ffperezs" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a [href]="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-folder-open"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="/img/Proyecto3.jpg" alt="proyecto 3">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/ffperezs" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-folder-open"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-close-white btn-educacion">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+        <button type="submit" class="btn btn-close-white btn-educacion">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <a href="https://github.com/ffperezs" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+      </a>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para iniciar tu proyecto de desarrollo web y haré que tu visión se haga realidad...
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:perezsanchezff@gmail.com">
+                <button>
+                  Contacto
+                  <i class="fa-solid fa-envelope-circle-check"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer class="seccion-oscura d-flex flex-colum align-items-center justify-content-center">
+      <div class="derechos-de-autor">Creado por Fabian Perez (2023) &#169;</div>
+      <button type="submit" class="btn btn-close-white btn-footer">
+        <i class="fa-solid fa-pencil"></i>
+      </button>
+    </footer>
+  </body>
+<!--JS Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>

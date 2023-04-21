@@ -1,0 +1,639 @@
+/* ESTILOS GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+body{
+	background-image: url(/img/body0.jpg);
+	max-width: 100%;
+}
+
+
+section h1{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.seccion-oscura{
+    color: #FFF;
+    background-color: #252A2E;
+}
+
+.seccion-clara{
+    color: #252A2E;
+    background-color: #FFF;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Righteous';
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto{
+    font-size: 1.5rem;
+}
+
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+
+/* LOGO */
+.logo{
+    width: 125px;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        display:none;
+    }
+}
+
+
+/* ICONOS REDES SOCIALES */
+.iconos-redes-sociales a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: black;
+    border: 2px solid #20C5D1;
+}
+
+.iconos-redes-sociales a:hover i{
+    color: #20C5D1;
+}
+
+
+/* ENCABEZADO */
+.banner img {
+	max-width: 100%;
+	object-fit: cover;
+
+}
+.banner{
+	padding:0px;
+	position:relative;
+	height: 40vh;
+	width: 100%;
+}
+
+.btn-banner i{
+	color: white;
+    font-size: 0.7rem;
+    display:flex;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
+.about-me{
+	background-color: white;
+	position: relative;
+	text-align: center;
+	font-family: 'Righteous';
+}
+
+.about-me img{
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	/*top: -40%; */
+	border: 8px solid white;
+}
+
+/*Iconos Contacto*/
+
+.about-me a {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: none;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+}
+
+.about-me i{
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.about-me a:hover{
+    background-color: none;
+    border: none;
+}
+
+.about-me a:hover i{
+    color: #20C5D1;
+}
+
+.btn-perfil i{
+    color: black;
+    font-size: 0.7rem;
+    display:flex;
+    position: absolute;
+    top: 80px;
+    right:120px;  
+}
+
+ .about-me h1 {
+	padding-top: 160px;
+ }
+ .about-me h2 {
+	font-style: 'Righteous';
+	padding: 5px;
+ }
+
+.about-me-description{
+	padding: 2%;
+	border: 1px solid rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.about-me-description h3{
+	font-family: 'Righteous';
+	font-weight: 400;
+	color: black;
+	font-size: 2.5em;
+}
+
+.btn-sobre-mi i{
+	color: black;
+    font-size: 0.7rem;
+    display:flex;
+    position:absolute;
+    top: 60px;
+    right: 40px;
+}
+
+.btn-datos i{
+	color: black;
+    font-size: 0.7rem;
+    display:flex;
+    position: absolute;
+    top: 180px;
+    right: 40px;
+}
+
+
+/* EXPERIENCIA LABORAL */
+.experiencia{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: black;
+    background-color: white;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color:gray;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.logo{
+    width: 60px;
+    height: 50px;
+
+}
+
+.experiencia-lugar{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+.btn-experiencia i{
+    color: white;
+    background-color: transparent;
+    font-size: 0.7rem;
+}
+
+
+/* EDUCACION */
+.educacion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px 60px 40px;
+}
+
+.educacion .columna{
+    padding: 20px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.educacion .columna:hover{
+    color: white;
+    background-color: black;
+}
+
+.educacion i{
+    font-size: 2.5rem;
+    color: gray;
+    background-color: white;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.logo{
+    width: 115px;
+    height: 55px;
+
+}
+
+.educacion-Instituto{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+.btn-educacion i{
+    color: black;
+    background-color: transparent;
+    font-size: 0.7rem;
+}
+
+
+/* HARD & SOFT SKILLS*/
+.skills{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252A2E;
+    color: white;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .col{
+    width: 50px;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #20C5D1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #20C5D1;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .angular{
+    width: 0%;
+    animation: 2s angular forwards;
+}
+@keyframes angular {
+    0%{width: 0%;}
+    100%{width: 83%;}
+}
+
+.skills .skill .git{
+    width: 0%;
+    animation: 2s git forwards;
+}
+@keyframes git {
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajoenequipo{
+    width: 0%;
+    animation: 2s trabajoenequipo forwards;
+}
+@keyframes trabajoenequipo {
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .compromiso{
+    width: 0%;
+    animation: 2s compromiso forwards;
+}
+@keyframes compromiso {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .escuchaactiva{
+    width: 0%;
+    animation: 2s escuchaactiva forwards;
+}
+@keyframes escuchaactiva {
+    0%{width: 0%;}
+    100%{width: 83%;}
+}
+
+
+/* PROYECTOS */
+.proyectos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+/*Adaptable (Responsivo)*/
+@media screen and (max-width: 400px) {
+    .overlay p{
+        font-size: 18px;
+    }
+}
+
+.overlay i{
+    color:black;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin: 40px;
+    background-color: #20C5D1;
+}
+
+.btn-proyectos i{
+    color: black;
+    background-color: transparent;
+    font-size: 0.7rem;
+}
+
+
+/* CONTACTO */
+.contacto .container{
+    max-width: 1100px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: #252A2E;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2em;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: #20C5D1;;
+    color: black;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i{
+    color: black;
+}
+
+
+/* FOOTER */
+footer{
+    min-height: 50px;
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 10px;
+}
+
+.btn-footer{
+    color: white;
+    font-size: 0.7rem;
+    display:flex;
+    position: absolute;
+    right: 5px;
+}
