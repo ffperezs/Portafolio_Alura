@@ -48,18 +48,6 @@ section h1{
 }
 
 
-/* LOGO */
-.logo{
-    width: 125px;
-    margin: 0;
-}
-
-@media screen and (max-width: 600px) {
-    .logo{
-        display:none;
-    }
-}
-
 
 /* ICONOS REDES SOCIALES */
 .iconos-redes-sociales a {
@@ -102,15 +90,6 @@ section h1{
 	position:relative;
 	height: 40vh;
 	width: 100%;
-}
-
-.btn-banner i{
-	color: white;
-    font-size: 0.7rem;
-    display:flex;
-    position: absolute;
-    top: 10px;
-    right: 15px;
 }
 
 
@@ -158,14 +137,6 @@ section h1{
     color: #20C5D1;
 }
 
-.btn-perfil i{
-    color: black;
-    font-size: 0.7rem;
-    display:flex;
-    position: absolute;
-    top: 80px;
-    right:120px;  
-}
 
  .about-me h1 {
 	padding-top: 160px;
@@ -185,24 +156,6 @@ section h1{
 	font-weight: 400;
 	color: black;
 	font-size: 2.5em;
-}
-
-.btn-sobre-mi i{
-	color: black;
-    font-size: 0.7rem;
-    display:flex;
-    position:absolute;
-    top: 60px;
-    right: 40px;
-}
-
-.btn-datos i{
-	color: black;
-    font-size: 0.7rem;
-    display:flex;
-    position: absolute;
-    top: 180px;
-    right: 40px;
 }
 
 
@@ -239,8 +192,8 @@ section h1{
 }
 
 .logo{
-    width: 60px;
-    height: 50px;
+    width: 50px;
+    height: 40px;
 
 }
 
@@ -259,12 +212,6 @@ section h1{
 
 .badge{
     margin: 5px;
-}
-
-.btn-experiencia i{
-    color: white;
-    background-color: transparent;
-    font-size: 0.7rem;
 }
 
 
@@ -322,14 +269,9 @@ section h1{
     margin: 5px;
 }
 
-.btn-educacion i{
-    color: black;
-    background-color: transparent;
-    font-size: 0.7rem;
-}
 
 
-/* HARD & SOFT SKILLS*
+/* HARD & SOFT SKILLS*/
 .skills{
     flex-direction: column;
     align-items: center;
@@ -394,7 +336,7 @@ section h1{
     font-size: 14px;
 }
 
-/* Estas clases se agregaran dinamicamente mediante javascript *
+/* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
@@ -449,11 +391,11 @@ section h1{
     100%{width: 80%;}
 }
 
-.skills .skill .trabajoenequipo{
+.skills .skill .trabajo{
     width: 0%;
-    animation: 2s trabajoenequipo forwards;
+    animation: 2s trabajo forwards;
 }
-@keyframes trabajoenequipo {
+@keyframes trabajo {
     0%{width: 0%;}
     100%{width: 88%;}
 }
@@ -476,14 +418,14 @@ section h1{
     100%{width: 80%;}
 }
 
-.skills .skill .escuchaactiva{
+.skills .skill .escucha{
     width: 0%;
-    animation: 2s escuchaactiva forwards;
+    animation: 2s escucha forwards;
 }
-@keyframes escuchaactiva {
+@keyframes escucha {
     0%{width: 0%;}
-    100%{width: 83%;}
-}*/
+    100%{width: 88%;}
+}
 
 
 /* PROYECTOS */
@@ -560,11 +502,6 @@ section h1{
     background-color: #20C5D1;
 }
 
-.btn-proyectos i{
-    color: black;
-    background-color: transparent;
-    font-size: 0.7rem;
-}
 
 
 /* CONTACTO */
@@ -628,12 +565,4 @@ footer{
     font-size: 15px;
     color: #aeaeae;
     padding: 10px;
-}
-
-.btn-footer{
-    color: white;
-    font-size: 0.7rem;
-    display:flex;
-    position: absolute;
-    right: 5px;
 }
